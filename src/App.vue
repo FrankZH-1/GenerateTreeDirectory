@@ -2,18 +2,21 @@
   <div class="container">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <div class="directory-container"><Directory></Directory></div>
+    <div class="article-container"><Article></Article></div>
   </div>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 import Directory from "./components/directory/Directory.vue";
+import Article from "./components/article.vue";
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
     Directory,
+    Article,
   },
 };
 </script>
@@ -32,6 +35,10 @@ export default {
 }
 .directory-container {
   width: 30%;
+  height: 100%;
+}
+.article-container {
+  width: 70%;
   height: 100%;
 }
 </style>

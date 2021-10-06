@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article>artical</article>
+    <article>article</article>
   </div>
 </template>
 <script>
