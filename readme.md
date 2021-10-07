@@ -1,4 +1,4 @@
-# generatetreedirectory
+# tree-diretory
 
 ## Project setup
 ```

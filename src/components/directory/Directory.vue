@@ -1,15 +1,13 @@
 <template>
-  <div><Root :folder="this.directory"></Root></div>
+  <div><Root :folder="directory"></Root></div>
 </template>
 
 <script>
 import Root from "./DirectoryRoot.vue";
-// import Content from "./DirectoryContent.vue";
 export default {
   name: "Directory",
   components: {
     Root,
-    // Content,
   },
   data: function () {
     return {
@@ -30,6 +28,15 @@ export default {
         ],
       },
     };
+  },
+  methods: {
+    load: function () {
+      let item = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+      console.log(item);
+    },
+  },
+  mounted: function () {
+    this.load();
   },
 };
 </script>

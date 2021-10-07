@@ -14,7 +14,6 @@ import Article from "./components/article.vue";
 export default {
   name: "App",
   components: {
-    // HelloWorld,
     Directory,
     Article,
   },

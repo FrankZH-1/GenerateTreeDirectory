@@ -1,5 +1,5 @@
 {
-  "name": "generatetreedirectory",
+  "name": "tree-diretory",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,40 +9,18 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "markdown": "^0.5.0",
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.2",
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
-    "install": "^0.13.0",
-    "webpack": "^4.46.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint-plugin-vue": "^7.19.1",
+    "typescript": "~4.1.5"
+  }
 }
