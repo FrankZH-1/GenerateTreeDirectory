@@ -27,17 +27,22 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 .container {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 .directory-container {
-  width: 30%;
-  height: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  text-align: left;
 }
 .article-container {
   width: 70%;
-  height: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: auto;
+  word-wrap: break-word;
 }
 </style>

@@ -91,5 +91,7 @@ This reverts commit hash \
 <style scoped>
 .article-container {
   text-align: left;
+  width: 100%;
+  margin: 10px;
 }
 </style>

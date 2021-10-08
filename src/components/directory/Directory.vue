@@ -1,9 +1,10 @@
 <template>
-  <div><Root :folder="directory"></Root></div>
+  <div class="directory-container"><Root :folder="directory"></Root></div>
 </template>
 
 <script>
 import Root from "./DirectoryRoot.vue";
+import { build } from "../../ts/buildTree";
 export default {
   name: "Directory",
   components: {
@@ -11,28 +12,13 @@ export default {
   },
   data: function () {
     return {
-      directory: {
-        name: "1",
-        children: [
-          {
-            name: "1.1",
-            children: [
-              { name: "1.1.1", children: [] },
-              { name: "1.1.2", children: [] },
-            ],
-          },
-          {
-            name: "1.2",
-            children: [],
-          },
-        ],
-      },
+      directory: {},
     };
   },
   methods: {
     load: function () {
       let item = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
-      console.log(item);
+      this.directory = build(item);
     },
   },
   mounted: function () {
@@ -40,3 +26,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+div {
+  margin: 10px;
+}
+</style>

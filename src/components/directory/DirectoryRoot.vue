@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span>{{ folder.name }}</span>
+    <span class="text-container">{{ folder.name }}</span>
     <Content :children="folder.children"></Content>
   </div>
 </template>
@@ -17,3 +17,13 @@ export default {
   },
 };
 </script>
+<style scoped>
+ul {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+span {
+  white-space: nowrap;
+}
+</style>
