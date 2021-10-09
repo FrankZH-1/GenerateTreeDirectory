@@ -1,5 +1,5 @@
 <template>
-  <div class="directory-container"><Root :folder="directory"></Root></div>
+  <div><Root :folder="directory"></Root></div>
 </template>
 
 <script>
@@ -27,7 +27,4 @@ export default {
 };
 </script>
 <style scoped>
-div {
-  margin: 10px;
-}
 </style>

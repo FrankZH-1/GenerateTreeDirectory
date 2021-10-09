@@ -2,7 +2,8 @@
   <div class="container">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <div class="directory-container"><Directory></Directory></div>
-    <div class="article-container"><Article></Article></div>
+    <span class="verticle-line"></span>
+    <div class="article"><Article></Article></div>
   </div>
 </template>
 
@@ -20,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,15 +35,25 @@ export default {
   padding: 0;
 }
 .directory-container {
+  width: 30%;
   height: 100vh;
   overflow-y: scroll;
   text-align: left;
 }
-.article-container {
+.article {
   width: 70%;
   height: 100vh;
   overflow-y: scroll;
   overflow-x: auto;
   word-wrap: break-word;
+}
+.verticle-line {
+  display: block;
+  background: black;
+  width: 1px;
+  height: 100vh;
+  margin: 0 15px;
+  transform: scaleX(0.5);
+  opacity: 40%;
 }
 </style>

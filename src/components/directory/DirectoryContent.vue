@@ -20,8 +20,9 @@ export default {
 <style scoped>
 li {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+  padding-top: 10px;
+  margin-left: -20px;
 }
 span {
   white-space: nowrap;

@@ -1,10 +1,22 @@
 <template>
-  <div class="article-container">
-    <article v-html="article"></article>
+  <div class="container">
+    <article v-html="article" ref="doc"></article>
   </div>
 </template>
 <script lang="ts">
+import { ref, onMounted } from "vue";
 export default {
+  // setup() {
+  //   const doc = ref<HTMLElement|null>(null);
+  //   function handleScroll() {
+  //     doc.scrollTop
+  //   }
+  //   onMounted(() => {
+  //     const article = document.querySelector("article");
+  //     article.addEventListener("scroll",)
+  //   });
+  //   return { doc };
+  // },
   data: function () {
     return {
       article:
@@ -89,7 +101,7 @@ This reverts commit hash \
 };
 </script>
 <style scoped>
-.article-container {
+.container {
   text-align: left;
   width: 100%;
   margin: 10px;
