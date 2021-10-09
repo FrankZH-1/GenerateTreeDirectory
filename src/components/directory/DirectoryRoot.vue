@@ -3,10 +3,8 @@
     <a
       class="text-container"
       :href="`#${folder.name}`"
-      @click="show = 1"
-      @contextmenu.prevent="show = 0"
+      @contextmenu.prevent="show = !show"
       >{{ folder.name }}
-      <!-- <div class="show-button" @click="show = !show"></div> -->
     </a>
     <Content :children="folder.children" v-if="show"></Content>
   </div>
@@ -39,8 +37,6 @@ export default {
 }
 ul {
   margin: 0;
-  /* padding-left: 20px; */
-  /* padding-top: 10px; */
 }
 a {
   white-space: nowrap;

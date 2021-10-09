@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <div class="directory-container"><Directory></Directory></div>
     <span class="verticle-line"></span>
     <div class="article"><Article></Article></div>
@@ -8,7 +7,6 @@
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
 import Directory from "./components/directory/Directory.vue";
 import Article from "./components/article.vue";
 
