@@ -3,8 +3,8 @@
     <a
       class="text-container"
       :href="`#${folder.name}`"
-      @mouseover="show = 1"
-      @mousedown="show = !show"
+      @click="show = 1"
+      @contextmenu.prevent="show = 0"
       >{{ folder.name }}
       <!-- <div class="show-button" @click="show = !show"></div> -->
     </a>
